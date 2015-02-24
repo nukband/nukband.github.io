@@ -2,14 +2,80 @@
 <head>
 <style>
 html {
-	background: url(temporary.jpg) no-repeat top center fixed;
+	zoom: 90%;
+	background: url(bg.png) no-repeat top center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+#social {
+	background: url(social.png);
+	width: 538px;
+	height: 74px;
+	float: right;
+}
+
+#logo {
+	background: url(logo.png);
+	width: 383px;
+	height: 300px;
+	margin: 10px auto 0 auto;
+
+}
+
+#main {
+	min-height: 714px;
+	max-width: 1294px;
+	margin: 10px auto;
+}
+
+#dates {
+	display: inline-block;
+	background: url(dates.png);
+	width: 300px;
+	height: 264px;
+	vertical-align: top;
+
+}
+
+#album {
+	display: inline-block;
+	width: 686px;
+	height: 715px;
+	vertical-align: top;
+}
+
+#spotify {
+	display: inline-block;
+	width: 300px;
+	height: 271px;
+	vertical-align: top;
+}
+
+img {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
 </style>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
+<div id='social'></div>
+<div id='logo'></div>
+<div id='main'>
+	<div id='dates'></div>
+	<div id='album'>
+		<a href="https://twitter.com/nuk_oficial"> <img class=menu src=news.png> </a>
+		<a href="https://www.facebook.com/nukband/photos_stream"><img class=menu src=photos.png></a>
+		<a href="mailto:nuk.oficial@gmail.com"><img class=menu src=contact.png></a>
+		<a href="http://open.spotify.com/album/5Cpr6G6PPIqH4mZPlaoLaK"><img src=album_no_menu_no_text.png>
+	</div>
+	<div id='spotify'><iframe src="https://embed.spotify.com/?uri=spotify:album:5Cpr6G6PPIqH4mZPlaoLaK" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></div>
+</div>
 </body>
 </html>
